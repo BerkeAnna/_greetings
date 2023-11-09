@@ -21,4 +21,8 @@ describe('greetings', () => {
         expect(greetings(['BARRY'])).toBe('HELLO BARRY!');
     })
 
+    test('mixed input', () => {
+        expect(greetings(['JAY', 'Maya', 'Alice', 'BOB', 'Charlotte'])).toBe('Hello Maya, Alice and Charlotte. HELLO JAY AND BOB!');
+    })
+
 })
