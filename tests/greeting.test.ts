@@ -9,4 +9,8 @@ describe('greetings', () => {
         expect(greetings(['Bob'])).toBe('Hello Bob.');
     })
 
+    test('multiple input', () => {
+        expect(greetings(['Alice', 'Bob', 'Jerry'])).toBe('Hello Alice, Bob and Jerry');
+    })
+
 })
