@@ -17,4 +17,8 @@ describe('greetings', () => {
         expect(greetings(['Alice', 'Bob', 'Jerry', 'Jenny'])).toBe('Hello Alice, Bob, Jerry and Jenny');
     })
 
+    test('only shouting input', () => {
+        expect(greetings(['BARRY'])).toBe('HELLO BARRY!');
+    })
+
 })
