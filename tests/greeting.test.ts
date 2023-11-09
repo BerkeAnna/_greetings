@@ -25,4 +25,8 @@ describe('greetings', () => {
         expect(greetings(['JAY', 'Maya', 'Alice', 'BOB', 'Charlotte'])).toBe('Hello Maya, Alice and Charlotte. HELLO JAY AND BOB!');
     })
 
+    test('entry contains comma input', () => {
+        expect(greetings(['Jerry', 'Alice, Bob'])).toBe('Hello Jerry, Alice and Bob.');
+    })
+
 })
