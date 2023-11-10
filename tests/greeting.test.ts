@@ -33,4 +33,8 @@ describe('greetings', () => {
         expect(greetings(['Jerry', 'Alice, Jenny, Bob'])).toBe('Hello Jerry, Alice, Jenny and Bob.');
     })
 
+    test('entry contains comma input and shouting', () => {
+        expect(greetings(['JERRY', 'ALICE, BOB'])).toBe('HELLO JERRY, ALICE AND BOB!');
+    })
+
 })
