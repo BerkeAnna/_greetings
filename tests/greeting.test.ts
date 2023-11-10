@@ -29,4 +29,8 @@ describe('greetings', () => {
         expect(greetings(['Jerry', 'Alice, Bob'])).toBe('Hello Jerry, Alice and Bob.');
     })
 
+    test('entry contains more than 1 comma', () => {
+        expect(greetings(['Jerry', 'Alice, Jenny, Bob'])).toBe('Hello Jerry, Alice, Jenny and Bob.');
+    })
+
 })
